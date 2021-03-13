@@ -4,6 +4,7 @@ import json
 # import requests as rq
 from skimage import io
 from skimage.transform import rescale
+import config
 
 # from urllib.request import urlopen as uReq
 import glob
@@ -97,4 +98,4 @@ def math_operation():
         return render_template('index.html')    
 
 if __name__ == '__main__':
-    app.run(debug=True)        
+    app.run(host='127.0.0.1',port=config.PORT, debug=config.DEBUG_MODE)
