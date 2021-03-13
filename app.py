@@ -5,7 +5,7 @@ import json
 from skimage import io
 from skimage.transform import rescale
 
-from urllib.request import urlopen as uReq
+# from urllib.request import urlopen as uReq
 import glob
 import resnet
 import pickle
